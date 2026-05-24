@@ -13,11 +13,14 @@ const Hero = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h1 className="text-4xl  sm:text-5xl md:text-6xl font-extrabold  text-gray-900">
-            <span>Premier </span>
+            <span>Powering </span>
+            <br></br>
+            <span> Tomorrow  </span>
+             
             <PointerHighlight rectangleClassName="bg-neutral-200 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-600">
-              <span className="relative z-10 p-2">AI-Powered</span>
+              <span className="relative z-10 p-2">With Intelligent AI</span>
             </PointerHighlight>
-            <span> Digital Solutions</span>
+             
           </h1>
 
           <motion.div
@@ -28,9 +31,10 @@ const Hero = () => {
           >
             <div className="rounded-2xl border border-gray-400 bg-white/70 backdrop-blur p-4 sm:p-5 shadow-xl">
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed ">
-                At BrosDeveloper, we create cutting-edge digital experiences
-                that don't just attract visitors they create lasting customer
-                relationships through intelligent, personalized interactions .
+                 BrosDevelopers is No.1 AI-powered AI solutions 
+                      brand for startups and businesses, building private AI systems that 
+                   combine automation, intelligence, and modern technology to transform 
+                    business operations and drive future innovation.
               </p>
             </div>
           </motion.div>
@@ -69,20 +73,7 @@ const Hero = () => {
             </div>
 
             {/* Bottom caption bar */}
-            <div className="relative border-t border-gray-200 bg-white px-4 sm:px-5 py-3">
-              <div className="flex items-center justify-between gap-3">
-                <div className="min-w-0">
-                  <p className="text-sm font-semibold text-gray-900 truncate">
-                    Intelligent Product Experiences
-                  </p>
-                  <p className="text-xs text-gray-600 truncate">
-                    ML-powered insights, real-time personalization, and robust
-                    foundations.
-                  </p>
-                </div>
-              </div>
-            </div>
-
+           
             <span
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-transparent group-hover:ring-gray-300 transition"

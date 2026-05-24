@@ -82,33 +82,34 @@ const Header = () => {
   };
 }, []);
 
-  const bgClass = scrolled ? "bg-[#f8f8f8]" : "bg-white";
+  // Use a light-black header background with white text
+  const bgClass = "bg-[#0b0b0b] text-white";
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 w-full">
       <div className="px-3 sm:px-4 md:px-6 lg:px-20 pt-6 md:py-3">
         {/* Top bar (pill) */}
         <div
-          className={`flex items-center justify-between gap-3 ${bgClass} border border-gray-200 rounded-full px-3 md:px-4 transition-colors duration-200 ease-out ${
+          className={`flex items-center justify-between gap-3 ${bgClass} border border-black-200 rounded-full px-3 md:px-4 transition-colors duration-200 ease-out ${
             scrolled ? "shadow-sm" : ""
           }`}
         >
           {/* Brand */}
-          <a href="#" className="flex items-center gap-3 md:gap-4">
+          <a href="#" className="flex items-center gap-3 md:gap-4 group">
             <img
               src={assets.logo}
               alt="Bros Developer logo"
-              className="w-[40px] h-[40px] sm:w-[46px] sm:h-[46px] md:w-[55px] md:h-[55px] shrink-0"
+              className="w-[40px] h-[40px] sm:w-[46px] sm:h-[46px] md:w-[55px] md:h-[55px] shrink-0 transition-transform duration-700 ease-out group-hover:scale-105"
             />
-            <span className="text-lg sm:text-xl md:text-2xl font-extrabold text-gray-900">
-              Bros Developers
+            <span className="text-lg sm:text-xl md:text-2xl font-extrabold text-white transition-colors duration-200 hover:text-indigo-200 shrink-0 transition-transform duration-800 ease-out group-hover:scale-105">
+              𝑩𝒓𝒐𝒔 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔
             </span>
           </a>
 
           {/* Desktop nav */}
           <nav
             aria-label="Primary"
-            className="hidden md:flex items-center justify-end gap-1 lg:gap-2 text-gray-700"
+            className="hidden md:flex items-center justify-end gap-1 lg:gap-2"
           >
             {links.map(({ href, label }) => {
               const active = hash === href;
@@ -118,8 +119,8 @@ const Header = () => {
                   href={href}
                   aria-current={active ? "page" : undefined}
                   className={`relative rounded-full px-3 py-1.5 lg:px-4 lg:py-2 text-sm lg:text-base font-medium transition-all duration-200 transform-gpu
-                  hover:bg-gray-900 hover:text-white hover:shadow-sm
-                  hover:-translate-y-0.5 active:translate-y-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300`}
+                  text-white hover:text-indigo-400 hover:shadow-sm
+                  hover:-translate-y-0.5 active:translate-y-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/40`}
                 >
                   {label}
                 </a>
@@ -133,7 +134,7 @@ const Header = () => {
           <button
             ref={buttonRef}
             type="button"
-            className="md:hidden inline-flex items-center justify-center w-10 h-8 text-gray-700 hover:bg-gray-100/80 transition-colors"
+            className="md:hidden inline-flex items-center justify-center w-10 h-8 text-white hover:bg-white/6 transition-colors"
             aria-label="Toggle navigation"
             aria-controls="primary-navigation"
             aria-expanded={menuOpen}
@@ -179,7 +180,7 @@ const Header = () => {
             <nav
               id="primary-navigation"
               aria-label="Primary mobile"
-              className={`${bgClass} border border-gray-200 rounded-2xl p-2 sm:p-3 text-gray-700`}
+                className={`${bgClass} border border-gray-800 rounded-2xl p-2 sm:p-3`}
             >
               <ul className="flex flex-col">
                 {links.map(({ href, label }) => {
@@ -191,12 +192,8 @@ const Header = () => {
                         aria-current={active ? "page" : undefined}
                         onClick={() => setMenuOpen(false)}
                         className={`flex items-center justify-between rounded-xl px-3 py-2 text-base font-medium transition-colors
-                          ${
-                            active
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-800 hover:bg-gray-100/80"
-                          }
-                          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300`}
+                            ${active ? "bg-white/6 text-white" : "text-white hover:bg-white/6 hover:text-indigo-400"}
+                            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/40`}
                       >
                         {label}
                         <svg

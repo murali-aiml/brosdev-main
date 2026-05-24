@@ -44,11 +44,16 @@ const Products = () => {
           <h2 className="text-6xl font-black text-gray-900">
             Our Products
           </h2>
-
-          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-            Building intelligent AI-powered products and
+          
+           <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-56">
+          <div className="mx-auto max-w-4xl rounded-2xl border border-gray-400 bg-white/80 md:bg-white/70 backdrop-blur p-4 sm:p-5 md:p-6 lg:p-7 shadow-xl mb-8 sm:mb-10">
+            <p className="text-gray-950 text-sm sm:text-base md:text-lg leading-relaxed text-center sm:text-left">
+              Building intelligent AI-powered products and
             next-generation digital solutions for the future.
-          </p>
+            </p>
+          </div>
+        </div>
+
         </div>
 
         {/* Products */}

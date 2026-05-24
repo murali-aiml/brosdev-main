@@ -5,7 +5,17 @@ import per from "@/assets/person1.jpg";
 import { motion } from "motion/react";
 
 export function ContainerTextFlipDemo() {
-  const words = ["Better", "Modern", "Beautiful", "Awesome","Powerful"];
+  const words = [
+  "Smarter",
+  "Automated",
+  "AI-Powered",
+  "Productive",
+  "Innovative",
+  "Efficient",
+  "Intelligent",
+  "Future-Ready"
+];
+
   return (
     <motion.h1
       initial={{
@@ -21,7 +31,7 @@ export function ContainerTextFlipDemo() {
       layout
     >
       <div className="inline-block leading-normal">
-        Make your websites look 10x <ContainerTextFlip words={words} />
+        Make your Office 10x <ContainerTextFlip words={words} />
       </div>
     </motion.h1>
   );

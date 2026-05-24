@@ -41,16 +41,14 @@ const Founders = () => {
 
               <blockquote className="mt-4 sm:mt-5">
                 <p className="text-gray-800 dark:text-neutral-200 text-sm sm:text-base leading-relaxed">
-                  We&apos;re not just building websites; we&apos;re crafting
-                  digital experiences that combine cutting-edge AI technology
-                  with flawless execution. Every line of code is written with
-                  precision and purpose.
+                  <b>"Our vision is to create AI-powered digital experiences that are smart, scalable, and future-ready.
+                   Every product we design is built with innovation, precision, and a passion for transforming ideas into reality."</b>
                 </p>
               </blockquote>
             </article>
           </BackgroundGradient>
 
-          {/* Namachiayan */}
+          {/* Muralidharan */}
           <BackgroundGradient className="rounded-[22px]  bg-white dark:bg-zinc-900">
             <article className="h-full rounded-3xl border border-gray-200 bg-white shadow-sm p-5 sm:p-6 md:p-7 dark:border-white/10 dark:bg-neutral-900">
               <header className="flex items-center gap-4">
@@ -69,15 +67,14 @@ const Founders = () => {
 
               <blockquote className="mt-4 sm:mt-5">
                 <p className="text-gray-800 dark:text-neutral-200 text-sm sm:text-base leading-relaxed">
-                  We&apos;re not just building websites; we&apos;re crafting
-                  digital experiences that combine cutting-edge AI technology
-                  with flawless execution. Every line of code is written with
-                  precision and purpose.
+                  <b>"Our mission is to create innovative AI-powered products that combine technology, 
+                    automation, and user-focused design to build smarter, scalable, intelligent, and
+                     future-ready digital experiences for the future."</b>
                 </p>
               </blockquote>
             </article>
           </BackgroundGradient>
-
+{/* Hemalatha */}
           <BackgroundGradient className="rounded-[22px]  bg-white dark:bg-zinc-900">
             <article className="h-full rounded-3xl border border-gray-200 bg-white shadow-sm p-5 sm:p-6 md:p-7 dark:border-white/10 dark:bg-neutral-900">
               <header className="flex items-center gap-4">
@@ -96,10 +93,9 @@ const Founders = () => {
 
               <blockquote className="mt-4 sm:mt-5">
                 <p className="text-gray-800 dark:text-neutral-200 text-sm sm:text-base leading-relaxed">
-                  We&apos;re not just building websites; we&apos;re crafting
-                  digital experiences that combine cutting-edge AI technology
-                  with flawless execution. Every line of code is written with
-                  precision and purpose.
+                  <b>"Our goal is to engineer powerful AI-driven solutions that merge advanced technology with
+                    seamless user experiences. Every system we design is built for scalability, innovation,
+                     and transforming ideas into impactful digital products."</b>
                 </p>
               </blockquote>
             </article>

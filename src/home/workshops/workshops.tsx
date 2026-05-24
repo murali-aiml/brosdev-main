@@ -98,26 +98,14 @@ const galleryItems = [
  
 ];
 
-const categories = [
-  "All",
-  "Theory",
-  "Practical",
-  "Workshop Video",
-];
+ 
 
 const WorkshopGallery = () => {
 
   const [active, setActive] = useState(2);
-  const [selected, setSelected] = useState("All");
 
-  // FIRST filtered
-  const filtered =
-    selected === "All"
-      ? galleryItems
-      : galleryItems.filter(
-          (item) => item.category === selected
-        );
 
+ const filtered = galleryItems;
   // THEN useEffect
   useEffect(() => {
 
@@ -149,52 +137,36 @@ const WorkshopGallery = () => {
   return (
     <section
       id="workshops"
-      className="relative pt-32 pb-24 overflow-hidden"
+      className="relative pt-[80px] pb-24 overflow-hidden"
     >
-      <div className="max-w-[1600px] mx-auto px-6">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="text-center">
 
-          <p className="uppercase tracking-[0.3em] text-sm font-bold text-indigo-600">
+          <p className="uppercase tracking-[0.3em] text-sm font-semibold text-indigo-600 mb-5">
             WORKSHOPS
           </p>
 
-          <h2 className="mt-4 text-5xl md:text-7xl font-black text-gray-900">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-tight mb-[35px]">
             Workshop Gallery
           </h2>
 
-          <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore our frontend development workshop,
-            student innovations, practical sessions,
-            and hands-on learning experiences.
-          </p>
+          <div className="mx-auto max-w-3xl px-4 sm:px-6">
+            <div className="rounded-[32px] border border-slate-200 bg-white shadow-[0_25px_60px_rgba(15,23,42,0.08)] p-10 mb-12">
+              <p className="text-gray-700 text-lg leading-[1.8] text-center">
+                Explore our frontend development workshop,
+                student innovations, practical sessions,
+                and hands-on learning experiences.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Categories */}
-        <div className="mt-14 flex flex-wrap justify-center gap-4">
-
-          {categories.map((cat, index) => (
-            <button
-              key={index}
-              onClick={() => setSelected(cat)}
-              className={`rounded-full border px-6 py-3 text-sm font-semibold transition-all duration-300
-              
-              ${
-                selected === cat
-                  ? "bg-indigo-600 border-indigo-600 text-white shadow-lg"
-                  : "bg-white border-gray-300 text-gray-700 hover:bg-gray-100"
-              }
-              
-              `}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
+         
         {/* Slider */}
-        <div className="relative mt-07 h-[720px] overflow-hidden">
+        <div className="relative mt-10 h-[720px] overflow-hidden">
 
           <div className="absolute inset-0 flex items-center justify-center">
 

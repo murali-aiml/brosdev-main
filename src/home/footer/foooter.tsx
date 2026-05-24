@@ -22,18 +22,17 @@ const Footer = () => {
                 />
                 <div>
                   <p className="text-xl sm:text-2xl font-extrabold text-white">
-                    Bros Developer
+                    BrosDevelopers
                   </p>
                   <p className="text-xs sm:text-sm text-indigo-300/90">
-                    Premier Digital Solutions
+                    Premier Private AI  
                   </p>
                 </div>
               </a>
 
               <p className="mt-5 text-sm sm:text-base leading-relaxed text-gray-300/90 max-w-prose">
-                Creating cutting-edge AI-powered digital experiences that
-                transform businesses and deliver exceptional results for premier
-                brands worldwide.
+                Creating cutting-edge AI-powered digital experiences that transform businesses through 
+                automation, innovation, and intelligent technology solutions.
               </p>
             </div>
 
@@ -47,56 +46,31 @@ const Footer = () => {
                   </h3>
                   <ul className="space-y-3">
                     <li>
+                      
                       <a href="#solutions" className={linkBase}>
-                        AI Personalization
+                        Private AI Systems
                       </a>
                     </li>
                     <li>
                       <a href="#solutions" className={linkBase}>
-                        SEO Optimization
+                        Custom AI Integrations
                       </a>
                     </li>
                     <li>
                       <a href="#solutions" className={linkBase}>
-                        Voice Integration
+                       AI Automation
                       </a>
                     </li>
                     <li>
                       <a href="#solutions" className={linkBase}>
-                        Predictive Analytics
+                       Web/App development
                       </a>
                     </li>
                   </ul>
                 </div>
 
                 {/* Company */}
-                <div>
-                  <h3 className="text-white text-sm font-semibold tracking-wide uppercase mb-4">
-                    Company
-                  </h3>
-                  <ul className="space-y-3">
-                    <li>
-                      <a href="#about" className={linkBase}>
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#portfolio" className={linkBase}>
-                        Portfolio
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#case-studies" className={linkBase}>
-                        Case Studies
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#careers" className={linkBase}>
-                        Careers
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              
 
                 {/* Support */}
                 <div>
@@ -109,21 +83,7 @@ const Footer = () => {
                         Contact Us
                       </a>
                     </li>
-                    <li>
-                      <a href="#docs" className={linkBase}>
-                        Documentation
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#help" className={linkBase}>
-                        Help Center
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#status" className={linkBase}>
-                        Status
-                      </a>
-                    </li>
+                     
                   </ul>
                 </div>
               </div>
@@ -146,11 +106,11 @@ const Footer = () => {
               className="h-6 w-6 rounded object-contain"
             />
             <span className="text-sm text-white font-semibold">
-              Bros Developer
+              BrosDevelopers
             </span>
             <span className="hidden sm:inline text-white/20">|</span>
             <span className="text-xs sm:text-sm text-gray-400">
-              © {year} Bros Developer. All rights reserved.
+              © {year} BrosDevelopers. All rights reserved.
             </span>
           </div>
 
